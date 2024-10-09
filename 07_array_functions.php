@@ -42,11 +42,11 @@ print_r($c);
 
 // Get array of keys
 $key = array_keys($c);
-// print_r($key);
+print_r($key);
 
 // flip keys <-> values
 $flipped = array_flip($key);
-// print_r($flipped);
+print_r($flipped);
 
 // Range
 $numbers = range(1, 10);
@@ -59,11 +59,13 @@ $newNumbers = array_map(function($number) {
 print_r($newNumbers);
 
 // Filter
-$lessThan6 = array_filter($numbers, fn($number) => $number <= 5);
+$lessThan6 = array_filter($numbers, fn($number) => $number <= 5); // function $number where $number less than or equal to 5
 print_r($lessThan6);
 
+$nums = range(1, 10);
+print_r($nums);
 
-$sum = array_reduce($lessThan6, fn($carry, $number) => $carry + $number);
+$sum = array_reduce($nums, fn($carry, $number) => $carry + $number);
 var_dump($sum);
 
 

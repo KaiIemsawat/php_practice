@@ -26,6 +26,17 @@ echo str_starts_with($string, "Hello") ?  "yes" :  "NO"; // start with
 echo " - ";
 echo str_ends_with($string, "Hello") ?  "yes" :  "NO"; // End with
 
+// Will show script alert
+$string2 = "<script>alert(1)</script>";
+echo $string2;
 
+// Will not show script alert
+$string3 = "<script>alert(2)</script>";
+echo htmlspecialchars($string3);
+
+printf("%s likes to %s", "Kai" , "code");
+
+printf("1 + 1 = %d", 1 + 1);
+printf("1 + 1 = %f", 1 + 1);
 
 ?>
